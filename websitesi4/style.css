@@ -1,0 +1,78 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    background-image: url(arka\ plan.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: sans-serif;
+}
+.menu-bar{
+    background-color: #5b71b5;
+    text-align: center;
+}
+.menu-bar ul{
+    display: inline-flex;
+    list-style-type: none;
+}
+.menu-bar ul li{
+    width: 150px;
+    margin: 15px;
+    padding: 15px;
+}
+.menu-bar ul li i{
+    margin-right: 6px;
+}
+.menu-bar ul li a{
+    color: white;
+    text-decoration: none;
+}
+.activate, .menu-bar ul li:hover{
+    background-color: #d4c995;
+    border-radius: 10px;  
+}
+.sub-menu-1{
+    display: none;
+}
+.menu-bar ul li:hover .sub-menu-1{
+    display: block;
+    position: absolute;
+    background-color: #5b71b5;
+    margin-top: 15px;
+    margin-left: -15px;
+    font-size: 10px;
+}
+.menu-bar ul li:hover .sub-menu-1 ul{
+   display: block;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li{
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px solid white;
+    background-color: transparent;
+    text-align: left;
+    border-radius: 0;
+    cursor: pointer;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li a:hover{
+    color: #d4c995;
+}
+.fa-caret-right{
+    font-size: 14px;
+    color: white;
+    float: right;
+}
+.sub-menu-2{
+    display: none;
+}
+.hover-me:hover .sub-menu-2{
+    display: block;
+    position: absolute;
+    margin-top: -40px;
+    margin-left: 140px;
+    background-color: #5b71b5;
+}

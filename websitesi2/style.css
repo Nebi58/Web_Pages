@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Titillium Web', sans-serif;
+}
+.container{
+    height: 100vh;
+    width: 100%;
+    padding: 0 8%;
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url("logo1.png");
+    background-size: cover;
+    background-position: center;
+
+}
+.container .navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 12%;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    column-gap: 20px;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    transition: .5s ease;
+}
+nav ul li a:hover{
+    color: black;
+}
+.row{
+    display: flex;
+    column-gap: 10px;
+    height: 88%;
+    align-items: center;
+}
+h1{
+    color  :white;
+    font-size: 100px;
+}
+.col{
+    flex-basis: 50%;/*artik iki col da yari yariya yer kaplicaktir.*/
+}
+p{
+    color: white;
+    font-size: 10px;
+    line-height: 16px;/*her satir arasinda 16px bosluk vardir.*/
+}
+.desc{
+    font-size: 16px;
+}
+.btn{
+    border-radius: 20px;
+    padding: 12px 28px;
+    border: 1px solid red;
+    font-size: 12px;
+    font-weight: 700;
+    margin-top: 30px;
+    cursor: pointer;
+    color: black;
+    background-color: white;
+    transition: .5s ease;
+}
+.btn:hover{
+    color: white;
+    background-color: black;
+    border-color: white;
+}
+.cards{
+    width: 500px;
+    margin: auto;
+}
+.card{
+    width: 200px;
+    height: 230px;
+    display: inline-block;
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    border: 1px solid red;
+    padding: 15px 25px;
+    margin: 10px 15px;
+    cursor: pointer;
+    position: relative;/*boylece sinirlar burasi oldu.*/
+    transition: .5s ease;
+}
+.card:hover{
+    transform: translateY(-10px);
+    border-color: white;
+}
+.card .card-head{
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 6px;
+    padding: 6px;
+    color: white;
+}
+.card .card-bottom{
+    position: absolute;
+    bottom: 15px;
+}
+.cards .card1{
+    background-image: url("logo2.png");
+}
+.cards .card2{
+    background-image: url("logo3.png");
+}
+.cards .card3{
+    background-image: url("logo4.png");
+}
+.cards .card4{
+    background-image: url("logo5.png");
+}
